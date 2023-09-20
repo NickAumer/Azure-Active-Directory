@@ -40,6 +40,7 @@ In azure create a new virtual machine running windows server 2022. This is our d
 Ensure they are on the same network by logging into the client VM via remote desktop and running a perpetual ping to the domain controllers private IP address. ping -t (private-ip).
 Then login to the domain controller and enable ICMPv4 on the LOCAL firewall. Go back to the client afterwards to see the ping succeed. Once confirmed you can disable the policy and stop the ping
 </p>
+
 ### Setting up Admin
 <p>
 Go back to the domain controller and install active directory domain services via the server manager. 
